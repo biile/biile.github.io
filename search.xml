@@ -4,38 +4,6 @@
   
     
     <entry>
-      <title>Ngnix</title>
-      <link href="/2021/09/28/Ngnix/"/>
-      <url>/2021/09/28/Ngnix/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>VMware虚拟机和主机之间复制、粘贴内容、拖拽文件的详细方法</title>
-      <link href="/2021/09/25/VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E3%80%81%E7%B2%98%E8%B4%B4%E5%86%85%E5%AE%B9%E3%80%81%E6%8B%96%E6%8B%BD%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%A6%E7%BB%86%E6%96%B9%E6%B3%95-1/"/>
-      <url>/2021/09/25/VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E3%80%81%E7%B2%98%E8%B4%B4%E5%86%85%E5%AE%B9%E3%80%81%E6%8B%96%E6%8B%BD%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%A6%E7%BB%86%E6%96%B9%E6%B3%95-1/</url>
-      
-        <content type="html"><![CDATA[<p>​        Vmware正确安装完linux虚拟机之后，这里以Ubuntu为例（其他linux或windows系统也是类似的），如果你使用的默认配置，正常情况下就可以复制、粘贴和拖拽内容的，双方向都是支持的。如果不能复制和拖拽一般是vmware tools没有正确安装导致。<br>     下面把可能的几种情况做一个总结，包括手工安装vmware tools的两种方法。</p><h1 id="VMware-tools-显示灰色"><a href="#VMware-tools-显示灰色" class="headerlink" title="VMware tools 显示灰色"></a>VMware tools 显示灰色</h1><ol><li>打开vmware，在主界面上点“虚拟机”，如下图所示“安装vmware tools”菜单是灰色的，这说明vmware tools工具没有成功安装。<br><img src="https://i.loli.net/2021/06/17/RukE7tOZU3qgKBH.png" alt="1.png"></li></ol><p>vmware tools工具成功安装之后界面如下图所示，会显示“重新安装”的字样。</p><h2 id="解决方法如下："><a href="#解决方法如下：" class="headerlink" title="解决方法如下："></a>解决方法如下：</h2><p>1.关闭虚拟机，点击菜单栏“虚拟机”，双击设备栏中的“CD/DVD(SATA)”</p><p><img src="https://i.loli.net/2021/06/17/CiXqUjNVWzDgker.png" alt="2.png"></p><ol start="2"><li><p>如果有软盘驱动则移除，用不到了，然后选中CD/DVD 光盘，右边 “连接” 选中”自动检测“，如下图所示：</p><p><img src="https://i.loli.net/2021/06/17/MEn2x5UktBj4oQa.png" alt="3.png"></p></li><li><p>打开虚拟机后，灰色字即点亮，可以正常安装。</p></li></ol><p><img src="https://i.loli.net/2021/06/17/7RSmVUXAJjevGp1.png" alt="4.png"></p><h2 id="VMware-tools安装"><a href="#VMware-tools安装" class="headerlink" title="VMware tools安装"></a>VMware tools安装</h2><ol><li>先把VMwareTools 文件复制到其他文件夹下</li></ol><p><img src="https://i.loli.net/2021/06/17/H7ApIPXLJONztqg.png" alt="5.png"></p><ol start="2"><li><p>压缩包格式为 <code>tar.gz</code> ，终端解压VMware Tools 文件 <code>tar -xzvf filename.tar,gz</code> </p></li><li><p>进入解压后的文件夹，<code>cd  Vmware-tools-distrib</code></p></li></ol><p><img src="https://i.loli.net/2021/06/17/26VmPaAMF3lzYGN.png" alt="6.png"></p><ol start="4"><li>执行 <code>./VMware-install.pl</code>，一路回车默认选项，如下图所示，即安装成功。</li></ol><p><img src="https://i.loli.net/2021/06/17/XUPnAZz1Y2VpBmW.png" alt="7.png"></p><p>安装成功后就可以实现主机与虚拟机之间的复制粘贴。</p><h1 id="文件拖拽"><a href="#文件拖拽" class="headerlink" title="文件拖拽"></a>文件拖拽</h1><ol><li><p>卸载系统原来的虚拟工具条</p><p><code>sudo apt-get autoremove open-vm-tools</code></p></li><li><p>安装桌面版的虚拟工具条，支持windows和linux之间文件的拖拽</p><p><code>sudo apt-get install open-vm-tools-desktop</code></p></li><li><p>重启，一定要重启才行。</p></li><li><p>重启之后就能实现文件的来回拖拽了，很方便，很实用。</p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> VMware </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>JavaScript入门</title>
       <link href="/2021/09/08/JavaScript%E5%85%A5%E9%97%A8/"/>
       <url>/2021/09/08/JavaScript%E5%85%A5%E9%97%A8/</url>
@@ -93,6 +61,25 @@
             <tag> tab页切换 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VMware虚拟机和主机之间复制、粘贴内容、拖拽文件的详细方法</title>
+      <link href="/2021/06/29/VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E3%80%81%E7%B2%98%E8%B4%B4%E5%86%85%E5%AE%B9%E3%80%81%E6%8B%96%E6%8B%BD%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%A6%E7%BB%86%E6%96%B9%E6%B3%95-1/"/>
+      <url>/2021/06/29/VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E5%A4%8D%E5%88%B6%E3%80%81%E7%B2%98%E8%B4%B4%E5%86%85%E5%AE%B9%E3%80%81%E6%8B%96%E6%8B%BD%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%A6%E7%BB%86%E6%96%B9%E6%B3%95-1/</url>
+      
+        <content type="html"><![CDATA[<p>​        Vmware正确安装完linux虚拟机之后，这里以Ubuntu为例（其他linux或windows系统也是类似的），如果你使用的默认配置，正常情况下就可以复制、粘贴和拖拽内容的，双方向都是支持的。如果不能复制和拖拽一般是vmware tools没有正确安装导致。<br>     下面把可能的几种情况做一个总结，包括手工安装vmware tools的两种方法。</p><h1 id="VMware-tools-显示灰色"><a href="#VMware-tools-显示灰色" class="headerlink" title="VMware tools 显示灰色"></a>VMware tools 显示灰色</h1><ol><li>打开vmware，在主界面上点“虚拟机”，如下图所示“安装vmware tools”菜单是灰色的，这说明vmware tools工具没有成功安装。<br><img src="https://i.loli.net/2021/06/17/RukE7tOZU3qgKBH.png" alt="1.png"></li></ol><p>vmware tools工具成功安装之后界面如下图所示，会显示“重新安装”的字样。</p><h2 id="解决方法如下："><a href="#解决方法如下：" class="headerlink" title="解决方法如下："></a>解决方法如下：</h2><p>1.关闭虚拟机，点击菜单栏“虚拟机”，双击设备栏中的“CD/DVD(SATA)”</p><p><img src="https://i.loli.net/2021/06/17/CiXqUjNVWzDgker.png" alt="2.png"></p><ol start="2"><li><p>如果有软盘驱动则移除，用不到了，然后选中CD/DVD 光盘，右边 “连接” 选中”自动检测“，如下图所示：</p><p><img src="https://i.loli.net/2021/06/17/MEn2x5UktBj4oQa.png" alt="3.png"></p></li><li><p>打开虚拟机后，灰色字即点亮，可以正常安装。</p></li></ol><p><img src="https://i.loli.net/2021/06/17/7RSmVUXAJjevGp1.png" alt="4.png"></p><h2 id="VMware-tools安装"><a href="#VMware-tools安装" class="headerlink" title="VMware tools安装"></a>VMware tools安装</h2><ol><li>先把VMwareTools 文件复制到其他文件夹下</li></ol><p><img src="https://i.loli.net/2021/06/17/H7ApIPXLJONztqg.png" alt="5.png"></p><ol start="2"><li><p>压缩包格式为 <code>tar.gz</code> ，终端解压VMware Tools 文件 <code>tar -xzvf filename.tar,gz</code> </p></li><li><p>进入解压后的文件夹，<code>cd  Vmware-tools-distrib</code></p></li></ol><p><img src="https://i.loli.net/2021/06/17/26VmPaAMF3lzYGN.png" alt="6.png"></p><ol start="4"><li>执行 <code>./VMware-install.pl</code>，一路回车默认选项，如下图所示，即安装成功。</li></ol><p><img src="https://i.loli.net/2021/06/17/XUPnAZz1Y2VpBmW.png" alt="7.png"></p><p>安装成功后就可以实现主机与虚拟机之间的复制粘贴。</p><h1 id="文件拖拽"><a href="#文件拖拽" class="headerlink" title="文件拖拽"></a>文件拖拽</h1><ol><li><p>卸载系统原来的虚拟工具条</p><p><code>sudo apt-get autoremove open-vm-tools</code></p></li><li><p>安装桌面版的虚拟工具条，支持windows和linux之间文件的拖拽</p><p><code>sudo apt-get install open-vm-tools-desktop</code></p></li><li><p>重启，一定要重启才行。</p></li><li><p>重启之后就能实现文件的来回拖拽了，很方便，很实用。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> VMware </category>
+          
+      </categories>
+      
       
     </entry>
     
