@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>js中document.write和innerHTML区别</title>
+      <link href="/2021/12/09/js%E4%B8%ADdocument-write%E5%92%8CinnerHTML%E5%8C%BA%E5%88%AB/"/>
+      <url>/2021/12/09/js%E4%B8%ADdocument-write%E5%92%8CinnerHTML%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>document.write</strong>是直接写入到页面的内容流，如果在写之前没有调用document.open，浏览器会自动open。每次写完关闭之后重新调用该函数，<strong>会导致页面被重写</strong>。</p><p><strong>innerHTML</strong>是DOM页面元素的属性，代表该元素的html内容。你可以精确到某一个具体的元素来进行更改。如果想修改document的内容，则需要修改document.documentElement.innerElement。 innerHTML将内容写入某个DOM节点，<strong>不会导致页面全部重绘</strong>。</p><hr><p>💠 innerHTML很多情况下都优于document.write，其原因在于其允许更精确的控制要刷新页面的那一个部分。</p><hr><h2 id="优缺"><a href="#优缺" class="headerlink" title="优缺"></a>优缺</h2><ol><li><p>document.write 是DOM方法，向文档写入HTML表达式或JavaScript代码，可列出多个参数，参数被顺序添加到文档中 ；</p><p>innerHTML 是DOM属性，设置或返回调用元素开始结束标签之间的HTML元素。</p></li><li><p>两者都可向页面输出内容，innerHTML 比 document.write 更灵活。<br>当文档加载时调用document.write 直接向页面输出内容，文档加载结束后调用document.write 输出内容会重写整个页面。</p><p>通常按照两种的方式使用 document.write() 方法：</p><p>​    一是在使用该方在文档中输出 HTML，</p><p>​    二是在调用该方法的的窗口之外的窗口、框架中产生新文档（务必使用close关闭文档）。<br>在读模式下，innerHTML 属性返回与调用元素的所有子节点对应的HTML标记，在写模式下，innerHTML 会根据指定的值创建新的DOM树替换调用元素原先的所有子节点。</p></li><li><p>两者都可动态包含外部资源如JavaScript文件<br>通过 document.write 插入 script 元素会自动执行其中的脚本；<br>大多数浏览器中，通过 innerHTML 插入 script 元素并不会执行其中的脚本。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> js </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>引用豆瓣图片资源无效</title>
       <link href="/2021/11/05/%E5%BC%95%E7%94%A8%E8%B1%86%E7%93%A3%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90%E6%97%A0%E6%95%88/"/>
       <url>/2021/11/05/%E5%BC%95%E7%94%A8%E8%B1%86%E7%93%A3%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90%E6%97%A0%E6%95%88/</url>
