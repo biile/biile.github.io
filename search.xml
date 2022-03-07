@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>css实现垂直居中</title>
+      <link href="/2021/12/19/css%E5%AE%9E%E7%8E%B0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
+      <url>/2021/12/19/css%E5%AE%9E%E7%8E%B0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</url>
+      
+        <content type="html"><![CDATA[<h2 id="设置垂直居中的-7-种方案"><a href="#设置垂直居中的-7-种方案" class="headerlink" title="设置垂直居中的 7 种方案"></a>设置垂直居中的 7 种方案</h2><h3 id="设定行高（line-height）"><a href="#设定行高（line-height）" class="headerlink" title="设定行高（line-height）"></a>设定行高（line-height）</h3><p>设定行高是垂直居中最简单的方案，适用于”单行”的”行内元素”（inline、inline-block），例如单行的标题，或是已经设为 inline-block 属性的 div，若将 inline-height 设成和高度一样的数值，则内容的行内元素就会被垂直居中。\</p><blockquote><p>为什么必须要单行的行内元素呢?<br>因为多行元素时，两行之间的行间距会过大，就不会如期望所示。</p></blockquote><h3 id="添加伪元素-beford、-after"><a href="#添加伪元素-beford、-after" class="headerlink" title="添加伪元素(::beford、::after)"></a>添加伪元素(::beford、::after)</h3><p>css 中的 vertical-align 属性，这个属性是实现垂直居中，到那时是指内部元素相对之间的垂直居中，并不是相对于父元素高度的垂直居中。<br>如果其中有一个元素的高度为 100%，那么其余元素就会相对于父元素实现垂直居中。<br>因此我们用到伪元素::before 和::after 添加到 div 中，使”伪”div 高度为 100%，div 的 display 属性为 inlink-block，因为 vertical-align:middle；这个属性是针对与行内元素的。div 本身使 block，所以作出一些修改。\</p><h3 id="clac-动态计算"><a href="#clac-动态计算" class="headerlink" title="clac 动态计算"></a>clac 动态计算</h3><h3 id="使用表格或假装表格"><a href="#使用表格或假装表格" class="headerlink" title="使用表格或假装表格"></a>使用表格或假装表格</h3><h3 id="transform"><a href="#transform" class="headerlink" title="transform"></a>transform</h3><h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><h3 id="使用弹性盒子（flex）"><a href="#使用弹性盒子（flex）" class="headerlink" title="使用弹性盒子（flex）"></a>使用弹性盒子（flex）</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> css </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 垂直居中 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>css实现垂直水平居中的常用方法</title>
       <link href="/2021/12/11/css%E5%AE%9E%E7%8E%B0%E5%9E%82%E7%9B%B4%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD/"/>
       <url>/2021/12/11/css%E5%AE%9E%E7%8E%B0%E5%9E%82%E7%9B%B4%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD/</url>
