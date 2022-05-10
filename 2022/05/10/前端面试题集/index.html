@@ -1,0 +1,493 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Biile | Biile</title><meta name="author" content="Biile"><meta name="copyright" content="Biile"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前端面试题集HTML 篇1.简述一下对 HTML 语义化的解释 html 语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；即使在没有样式 CSS 情况下也以一种文档格式显示，并且是容易阅读的;搜索引擎的爬虫也依赖于 HTML 标记来确定上下文和各个关键字的权重，利于 SEO;使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。  2.标签上 title 和 alt 属性的区">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Biile">
+<meta property="og:url" content="https://biile.xyz/2022/05/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/index.html">
+<meta property="og:site_name" content="Biile">
+<meta property="og:description" content="前端面试题集HTML 篇1.简述一下对 HTML 语义化的解释 html 语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；即使在没有样式 CSS 情况下也以一种文档格式显示，并且是容易阅读的;搜索引擎的爬虫也依赖于 HTML 标记来确定上下文和各个关键字的权重，利于 SEO;使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。  2.标签上 title 和 alt 属性的区">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://biile.xyz/img/default.jpg">
+<meta property="article:published_time" content="2022-05-10T07:07:33.044Z">
+<meta property="article:modified_time" content="2022-05-10T08:48:11.084Z">
+<meta property="article:author" content="Biile">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://biile.xyz/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://biile.xyz/2022/05/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Biile',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-10 16:48:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/iconfont.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-wenzhang"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-shijian"></i><span> 时间线</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-yule"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw iconfont icon-tuku"></i><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-lianjie"></i><span> 其他</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-lianjie"></i><span> 网站集锦</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw iconfont icon-wode-woshituanchang"></i><span> 关于我</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Biile</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-wenzhang"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-shijian"></i><span> 时间线</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-yule"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw iconfont icon-tuku"></i><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-lianjie"></i><span> 其他</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-lianjie"></i><span> 网站集锦</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw iconfont icon-wode-woshituanchang"></i><span> 关于我</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-10T07:07:33.044Z" title="发表于 2022-05-10 15:07:33">2022-05-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-10T08:48:11.084Z" title="更新于 2022-05-10 16:48:11">2022-05-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前端面试题集"><a href="#前端面试题集" class="headerlink" title="前端面试题集"></a>前端面试题集</h1><h2 id="HTML-篇"><a href="#HTML-篇" class="headerlink" title="HTML 篇"></a>HTML 篇</h2><h3 id="1-简述一下对-HTML-语义化的解释"><a href="#1-简述一下对-HTML-语义化的解释" class="headerlink" title="1.简述一下对 HTML 语义化的解释"></a>1.简述一下对 HTML 语义化的解释</h3><blockquote>
+<p>html 语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；即使在没有样式 CSS 情况下也以一种文档格式显示，并且是容易阅读的;搜索引擎的爬虫也依赖于 HTML 标记来确定上下文和各个关键字的权重，利于 SEO;使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。</p>
+</blockquote>
+<h3 id="2-标签上-title-和-alt-属性的区别是什么？"><a href="#2-标签上-title-和-alt-属性的区别是什么？" class="headerlink" title="2.标签上 title 和 alt 属性的区别是什么？"></a>2.标签上 title 和 alt 属性的区别是什么？</h3><blockquote>
+<p>alt 是给搜索引擎识别，在图像无法显示时的替代文本；<br>title 是关于元素的注释信息，主要是给用户解读。<br>当鼠标放到文字或是图片上时有 title 文字显示。（因为 IE 不标准）在 IE 浏览器中 alt 起到了 title 的作用，变成文字提示。<br>在定义 img 对象时，将 alt 和 title 属性写全，可以保证在各种浏览器中都能正常使用。</p>
+</blockquote>
+<h3 id="3-iframe-的优缺点"><a href="#3-iframe-的优缺点" class="headerlink" title="3.iframe 的优缺点"></a>3.iframe 的优缺点</h3><blockquote>
+<p>优点：</p>
+<ul>
+<li>解决加载缓慢的第三方内容如图标和广告等的加载问题</li>
+<li>Security sandbox</li>
+<li>并行加载脚本</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>iframe 会阻塞主页面的 Onload 事件</li>
+<li>即时内容为空，加载也需要时间</li>
+<li>没有语意</li>
+</ul>
+</blockquote>
+<h2 id="CSS-篇"><a href="#CSS-篇" class="headerlink" title="CSS 篇"></a>CSS 篇</h2><h3 id="1-介绍一下-CSS-的盒子模型"><a href="#1-介绍一下-CSS-的盒子模型" class="headerlink" title="1.介绍一下 CSS 的盒子模型"></a>1.介绍一下 CSS 的盒子模型</h3><blockquote>
+<p>有两种， IE 盒子模型、W3C 盒子模型；<br>盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；<br>区 别： IE 的 content 部分把 border 和 padding 计算了进去;</p>
+</blockquote>
+<h3 id="2-垂直居中的几种方式"><a href="#2-垂直居中的几种方式" class="headerlink" title="2.垂直居中的几种方式"></a>2.垂直居中的几种方式</h3><blockquote>
+<p>单行文本: line-height = height<br>图片: vertical-align: middle;<br>absolute 定位: top: 50%;left: 50%;transform: translate(-50%, -50%);<br>flex: display:flex;margin:auto</p>
+</blockquote>
+<h3 id="3-rgba-和-opacity-的透明效果有什么不同？"><a href="#3-rgba-和-opacity-的透明效果有什么不同？" class="headerlink" title="3.rgba 和 opacity 的透明效果有什么不同？"></a>3.rgba 和 opacity 的透明效果有什么不同？</h3><blockquote>
+<p>opacity 会继承父元素的 opacity 属性，而 RGBA 设置的元素的后代元素不会继承不透明属性。</p>
+</blockquote>
+<h3 id="4-position-的值，relative-和-absolute-分别是相对于谁进行定位"><a href="#4-position-的值，relative-和-absolute-分别是相对于谁进行定位" class="headerlink" title="4.position 的值，relative 和 absolute 分别是相对于谁进行定位"></a>4.position 的值，relative 和 absolute 分别是相对于谁进行定位</h3><blockquote>
+<p>relative:相对定位，相对于自己本身在正常文档流中的位置进行定位。<br>absolute:生成绝对定位，相对于最近一级定位不为 static 的父元素进行定位。<br>fixed: （老版本 IE 不支持）生成绝对定位，相对于浏览器窗口或者 frame 进行定位。<br>static:默认值，没有定位，元素出现在正常的文档流中。<br>sticky:生成粘性定位的元素，容器的位置根据正常文档流计算得出。</p>
+</blockquote>
+<h2 id="HTML-CSS-混合篇"><a href="#HTML-CSS-混合篇" class="headerlink" title="HTML / CSS 混合篇"></a>HTML / CSS 混合篇</h2><h3 id="1-HTML5、CSS-里面都新增了那些特性？"><a href="#1-HTML5、CSS-里面都新增了那些特性？" class="headerlink" title="1.HTML5、CSS 里面都新增了那些特性？"></a>1.HTML5、CSS 里面都新增了那些特性？</h3><blockquote>
+<p>HTML5</p>
+<ul>
+<li>新的语义标签</li>
+<li>article 独立的内容。</li>
+<li>aside 侧边栏。</li>
+<li>header 头部。</li>
+<li>nav 导航。</li>
+<li>section 文档中的节。</li>
+<li>footer 页脚。</li>
+<li>画布(Canvas) API</li>
+<li>地理(Geolocation) API</li>
+<li>本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失；</li>
+<li>sessionStorage 的数据在浏览器关闭后自动删除</li>
+<li>新的技术 webworker, websocket, Geolocation</li>
+<li>拖拽释放(Drag and drop) API</li>
+<li>音频、视频 API(audio,video)</li>
+<li>表单控件，calendar、date、time、email、url、search</li>
+</ul>
+<p>CSS3</p>
+<ul>
+<li>2d，3d 变换</li>
+<li>Transition, animation</li>
+<li>媒体查询</li>
+<li>新的单位（rem, vw，vh 等）</li>
+<li>圆角（border-radius），阴影（box-shadow），对文字加特效（text-shadow），线性渐变（gradient），旋转（transform）transform:rotate(9deg) scale(0.85,0.90)transnslate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜</li>
+<li>rgba</li>
+</ul>
+</blockquote>
+<h3 id="2-BFC-是什么？"><a href="#2-BFC-是什么？" class="headerlink" title="2.BFC 是什么？"></a>2.BFC 是什么？</h3><blockquote>
+<p>BFC 即 Block Formatting Contexts (块级格式化上下文)，它属于普通流，即：元素按照其在 HTML 中的先后位置至上而下布局，在这个过程中，行内元素水平排列，直到当行被占满然后换行，块级元素则会被渲染为完整的一个新行，除非另外指定，否则所有元素默认都是普通流定位，也可以说，普通流中元素的位置由该元素在 HTML 文档中的位置决定。<br>可以把 BFC 理解为一个封闭的大箱子，箱子内部的元素无论如何翻江倒海，都不会影响到外部。<br>只要元素满足下面任一条件即可触发 BFC 特性</p>
+<ul>
+<li>body 根元素</li>
+<li>浮动元素：float 除 none 以外的值</li>
+<li>绝对定位元素：position (absolute、fixed)</li>
+<li>display 为 inline-block、table-cells、flex</li>
+<li>overflow 除了 visible 以外的值 (hidden、auto、scroll)</li>
+</ul>
+</blockquote>
+<h3 id="3-常见兼容性问题"><a href="#3-常见兼容性问题" class="headerlink" title="3.常见兼容性问题"></a>3.常见兼容性问题</h3><blockquote>
+<p>浏览器默认的 margin 和 padding 不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。<br>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决.</p>
+</blockquote>
+<h2 id="JS-篇"><a href="#JS-篇" class="headerlink" title="JS 篇"></a>JS 篇</h2><h3 id="1-JS-数据类型？"><a href="#1-JS-数据类型？" class="headerlink" title="1.JS 数据类型？"></a>1.JS 数据类型？</h3><blockquote>
+<p>数据类型主要包括两部分：</p>
+<ul>
+<li>基本数据类型： Undefined、Null、Boolean、Number 和 String</li>
+<li>引用数据类型： Object (包括 Object 、Array 、Function)</li>
+<li>ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )</li>
+</ul>
+</blockquote>
+<h3 id="2-判断一个值是什么类型有哪些方法？"><a href="#2-判断一个值是什么类型有哪些方法？" class="headerlink" title="2.判断一个值是什么类型有哪些方法？"></a>2.判断一个值是什么类型有哪些方法？</h3><blockquote>
+<ul>
+<li>typeof 运算符</li>
+<li>instanceof 运算符</li>
+<li>Object.prototype.toString 方法</li>
+</ul>
+</blockquote>
+<h3 id="3-null-和-undefined-的区别"><a href="#3-null-和-undefined-的区别" class="headerlink" title="3.null 和 undefined 的区别"></a>3.null 和 undefined 的区别</h3><blockquote>
+<p>null 表示一个对象被定义了，值为“空值”；undefined 表示不存在这个值。<br>（1）变量被声明了，但没有赋值时，就等于 undefined。<br>（2) 调用函数时，应该提供的参数没有提供，该参数等于 undefined。<br>（3）对象没有赋值的属性，该属性的值为 undefined。<br>（4）函数没有返回值时，默认返回 undefined。</p>
+</blockquote>
+<h3 id="4-怎么判断一个变量-arr-的话是否为数组（此题用-typeof-不行）？"><a href="#4-怎么判断一个变量-arr-的话是否为数组（此题用-typeof-不行）？" class="headerlink" title="4.怎么判断一个变量 arr 的话是否为数组（此题用 typeof 不行）？"></a>4.怎么判断一个变量 arr 的话是否为数组（此题用 typeof 不行）？</h3><blockquote>
+<ul>
+<li>arr instanceof Array</li>
+<li>arr.constructor == Array</li>
+<li>Object.protype.toString.call(arr) == ‘[Object Array]’</li>
+</ul>
+</blockquote>
+<h3 id="5-箭头函数有哪些特点？"><a href="#5-箭头函数有哪些特点？" class="headerlink" title="5.箭头函数有哪些特点？"></a>5.箭头函数有哪些特点？</h3><blockquote>
+<ul>
+<li>不需要 function 关键字来创建函数</li>
+<li>省略 return 关键字</li>
+<li>改变 this 指向</li>
+</ul>
+</blockquote>
+<h3 id="6-new-操作符具体干了什么呢？"><a href="#6-new-操作符具体干了什么呢？" class="headerlink" title="6.new 操作符具体干了什么呢？"></a>6.new 操作符具体干了什么呢？</h3><blockquote>
+<ol>
+<li>创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。</li>
+<li>属性和方法被加入到 this 引用的对象中。</li>
+<li>新创建的对象由 this 所引用，并且最后隐式的返回 this 。</li>
+</ol>
+</blockquote>
+<h3 id="7-documen-write"><a href="#7-documen-write" class="headerlink" title="7.documen.write"></a>7.documen.write</h3><blockquote>
+<ul>
+<li>document.write 只能重绘整个页面</li>
+<li>innerHTML 可以重绘页面的一部分</li>
+</ul>
+</blockquote>
+<h3 id="8-ajax-过程"><a href="#8-ajax-过程" class="headerlink" title="8.ajax 过程"></a>8.ajax 过程</h3><blockquote>
+<p>(1)创建 XMLHttpRequest 对象,也就是创建一个异步调用对象.</p>
+<p>(2)创建一个新的 HTTP 请求,并指定该 HTTP 请求的方法、URL 及验证信息.</p>
+<p>(3)设置响应 HTTP 请求状态变化的函数.</p>
+<p>(4)发送 HTTP 请求.</p>
+<p>(5)获取异步调用返回的数据.</p>
+<p>(6)使用 JavaScript 和 DOM 实现局部刷新.</p>
+</blockquote>
+<h3 id="9-请解释一下-JavaScript-的同源策略？"><a href="#9-请解释一下-JavaScript-的同源策略？" class="headerlink" title="9.请解释一下 JavaScript 的同源策略？"></a>9.请解释一下 JavaScript 的同源策略？</h3><blockquote>
+<p>概念:同源策略是客户端脚本（尤其是 Netscape Navigator2.0，其目的是防止某个文档或脚本从多个不同源装载。这里的同源策略指的是：协议，域名，端口相同，同源策略是一种安全协议。指一段脚本只能读取来自同一来源的窗口和文档的属性。</p>
+</blockquote>
+<h3 id="10-介绍一下闭包和闭包常用场景"><a href="#10-介绍一下闭包和闭包常用场景" class="headerlink" title="10.介绍一下闭包和闭包常用场景"></a>10.介绍一下闭包和闭包常用场景</h3><blockquote>
+<p>闭包是指有权访问另一个函数作用域中的变量的函数，创建闭包常见方式，就是在一个函数的内部创建另一个函数<br>使用闭包主要为了设计私有的方法和变量，闭包的优点是可以避免变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。在 js 中，函数即闭包，只有函数才会产生作用域的概念。<br>闭包有三个特性：</p>
+<ul>
+<li>函数嵌套函数</li>
+<li>函数内部可以引用外部的参数和变量</li>
+<li>参数和变量不会被垃圾回收机制回收<br>应用场景，设置私有变量的方法<br>不适用场景：返回闭包的函数是个非常大的函数<br>闭包的缺点就是常驻内存，会增大内存使用量，使用不当会造成内存泄漏</li>
+</ul>
+</blockquote>
+<h3 id="11-JavaScript-的内存（垃圾）回收机制？"><a href="#11-JavaScript-的内存（垃圾）回收机制？" class="headerlink" title="11.JavaScript 的内存（垃圾）回收机制？"></a>11.JavaScript 的内存（垃圾）回收机制？</h3><blockquote>
+<ul>
+<li>垃圾回收器会每隔一段时间找出那些不再使用的内存，然后为其释放内存</li>
+<li>一般使用标记清除方法(mark and sweep), 当变量进入环境标记为进入环境，离开环境标记为离开环境垃圾回收器会在运行的时候给存储在内存中的所有变量加上标记，然后去掉环境中的变量以及被环境中变量所引用的变量（闭包），在这些完成之后仍存在标记的就是要删除的变量了</li>
+<li>还有引用计数方法(reference counting), 在低版本 IE 中经常会出现内存泄露，很多时候就是因为其采用引用计数方式进行垃圾回收。引用计数的策略是跟踪记录每个值被使用的次数，当声明了一个变量并将一个引用类型赋值给该变量的时候这个值的引用次数就加 1，如果该变量的值变成了另外一个，则这个值得引用次数减 1，当这个值的引用次数变为 0 的时 候，说明没有变量在使用，这个值没法被访问了，因此可以将其占用的空间回收，这样垃圾回收器会在运行的时候清理掉引用次数为 0 的值占用的空间。</li>
+<li>在 IE 中虽然 JavaScript 对象通过标记清除的方式进行垃圾回收，但 BOM 与 DOM 对象却是通过引用计数回收垃圾的， 也就是说只要涉及 BOM 及 DOM 就会出现循环引用问题。</li>
+</ul>
+</blockquote>
+<h2 id="Vue-篇"><a href="#Vue-篇" class="headerlink" title="Vue 篇"></a>Vue 篇</h2><h3 id="1-谈谈对-MVVM-开发模式的理解"><a href="#1-谈谈对-MVVM-开发模式的理解" class="headerlink" title="1.谈谈对 MVVM 开发模式的理解"></a>1.谈谈对 MVVM 开发模式的理解</h3><blockquote>
+<ul>
+<li>MVVM 分为 Model、View、ViewModel 三者。</li>
+<li>Model 代表数据模型，数据和业务逻辑都在 Model 层中定义；</li>
+<li>View 代表 UI 视图，负责数据的展示；</li>
+<li>ViewModel 负责监听 Model 中数据的改变并且控制视图的更新，处理用户交互操作；</li>
+<li>Model 和 View 并无直接关联，而是通过 ViewModel 来进行联系的，Model 和 ViewModel 之间有着双向数据绑定的联系。因此当 Model 中的数据改变时会触发 View 层的刷新，View 中由于用户交互操作而改变的数据也会在 Model 中同步。</li>
+<li>这种模式实现了 Model 和 View 的数据自动</li>
+</ul>
+</blockquote>
+<h3 id="2-v-if-和-v-show-有什么区别？"><a href="#2-v-if-和-v-show-有什么区别？" class="headerlink" title="2.v-if 和 v-show 有什么区别？"></a>2.v-if 和 v-show 有什么区别？</h3><blockquote>
+<ul>
+<li>v-if 是真正的条件渲染，会控制这个 DOM 节点的存在与否。因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建；也是惰性的：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。</li>
+<li>v-show 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 的 “display” 属性进行切换。当我们需要经常切换某个元素的显示/隐藏时，使用 v-show 会更加节省性能上的开销；当只需要一次显示或隐藏时，使用 v-if 更加合理。</li>
+</ul>
+</blockquote>
+<h3 id="3-使用过-VueX-吗？"><a href="#3-使用过-VueX-吗？" class="headerlink" title="3.使用过 VueX 吗？"></a>3.使用过 VueX 吗？</h3><blockquote>
+<ul>
+<li><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。“store” 基本上就是一个容器，它包含着你的应用中大部分的状态 ( state )。</p>
+</li>
+<li><p>（1）Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。</p>
+</li>
+<li><p>（2）改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation。这样使得我们可以方便地跟踪每一个状态的变化。</p>
+</li>
+</ul>
+<p>主要包括以下几个模块：</p>
+<ul>
+<li>State =&gt; 基本数据，定义了应用状态的数据结构，可以在这里设置默认的初始状态。</li>
+<li>Getter =&gt; 从基本数据派生的数据，允许组件从 Store 中获取数据，mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性。</li>
+<li>Mutation =&gt; 是唯一更改 store 中状态的方法，且必须是同步函数。</li>
+<li>Action =&gt; 像一个装饰器，包裹 mutations，使之可以异步。用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。</li>
+<li>Module =&gt; 模块化 Vuex，允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。</li>
+</ul>
+</blockquote>
+<h3 id="4-说说对-SPA-单页面的理解，它的优缺点分别是什么？"><a href="#4-说说对-SPA-单页面的理解，它的优缺点分别是什么？" class="headerlink" title="4.说说对 SPA 单页面的理解，它的优缺点分别是什么？"></a>4.说说对 SPA 单页面的理解，它的优缺点分别是什么？</h3><blockquote>
+<p>SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页&gt; 面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 &gt; HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。</p>
+<p>优点：</p>
+<ul>
+<li>用户体验好、快，内容的改变不需要重新加载整个页面，避免了不必要的跳转和重复渲染；</li>
+<li>基于上面一点，SPA 相对对服务器压力小；</li>
+<li>前后端职责分离，架构清晰，前端进行交互逻辑，后端负责数据处理；</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>初次加载耗时多：为实现单页 Web 应用功能及显示效果，需要在加载页面的时候将 JavaScript、CSS 统&gt;&gt; 加载，部分页面按需加载；</li>
+<li>前进后退路由管理：由于单页应用在一个页面中显示所有的内容，所以不能使用浏览器的前进后退功能，所&gt;&gt;有的页面切换需要自己建立堆栈管理；</li>
+<li>SEO 难度较大：由于所有的内容都在一个页面中动态替换显示，所以在 SEO 上其有着天然的弱势。</li>
+</ul>
+</blockquote>
+<h3 id="5-Class-于-Style-如何动态绑定？"><a href="#5-Class-于-Style-如何动态绑定？" class="headerlink" title="5.Class 于 Style 如何动态绑定？"></a>5.Class 于 Style 如何动态绑定？</h3><blockquote>
+<p>Class 可以通过对象语法和数组语法进行动态绑定：</p>
+<p>对象语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:class=&quot;&#123; active: isActive, &#x27;text-danger&#x27;: hasError &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">data: &#123;</span><br><span class="line">  isActive: true,</span><br><span class="line">  hasError: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>数组语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:class=&quot;[isActive ? activeClass : &#x27;&#x27;, errorClass]&quot;&gt;&lt;/div&gt;</span><br><span class="line">data: &#123;</span><br><span class="line">  activeClass: &#x27;active&#x27;,</span><br><span class="line">  errorClass: &#x27;text-danger&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>Style 也可以通过对象语法和数组语法进行动态绑定：</p>
+<p>对象语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:style=&quot;&#123; color: activeColor, fontSize: fontSize + &#x27;px&#x27; &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line">data: &#123;</span><br><span class="line">  activeColor: &#x27;red&#x27;,</span><br><span class="line">  fontSize: 30</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>数组语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:style=&quot;[styleColor, styleSize]&quot;&gt;&lt;/div&gt;</span><br><span class="line">data: &#123;</span><br><span class="line">  styleColor: &#123;</span><br><span class="line">      color: &#x27;red&#x27;</span><br><span class="line">  &#125;,</span><br><span class="line">  styleSize:&#123;</span><br><span class="line">      ontSize:&#x27;23px&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="6-怎样理解-Vue-的单向数据流？"><a href="#6-怎样理解-Vue-的单向数据流？" class="headerlink" title="6.怎样理解 Vue 的单向数据流？"></a>6.怎样理解 Vue 的单向数据流？</h3><blockquote>
+<p>所有的 prop 都使得其父子 prop 之间形成了一个单向下行绑定：父级 prop 的更新会向下流动到子组件中，但是反过来则不行。<br>这样会防止从子组件意外改变父级组件的状态，从而导致你的应用的数据流向难以理解。<br>额外的，每次父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。<br>这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。<br>子组件想修改时，只能通过 $emit 派发一个自定义事件，父组件接收到后，由父组件修改。</p>
+</blockquote>
+<h3 id="7-computed-和-watch-的区别和运用场景？"><a href="#7-computed-和-watch-的区别和运用场景？" class="headerlink" title="7.computed 和 watch 的区别和运用场景？"></a>7.computed 和 watch 的区别和运用场景？</h3><blockquote>
+<p>computed： 是计算属性，依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed 的值；<br>watch： 更多的是「观察」的作用，类似于某些数据的监听回调 ，每当监听的数据变化时都会执行回调进行后续操作；<br>运用场景：</p>
+<ul>
+<li>当我们需要进行数值计算，并且依赖于其它数据时，应该使用 computed，因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；</li>
+<li>当我们需要在数据变化时执行异步或开销较大的操作时，应该使用 watch，使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</li>
+</ul>
+</blockquote>
+<h3 id="8-直接给一个数组赋值，Vue-能检测到变化吗？"><a href="#8-直接给一个数组赋值，Vue-能检测到变化吗？" class="headerlink" title="8.直接给一个数组赋值，Vue 能检测到变化吗？"></a>8.直接给一个数组赋值，Vue 能检测到变化吗？</h3><blockquote>
+<p>由于 JavaScript 的限制，Vue 不能检测到以下数组的变动：</p>
+<ul>
+<li>当你利用索引直接设置一个数组项时，例如：vm.items[indexOfItem] = newValue</li>
+<li>当你修改数组的长度时，例如：vm.items.length = newLength</li>
+</ul>
+<p>为了解决第一个问题，Vue 提供了以下操作方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Vue.set</span><br><span class="line">Vue.set(vm.items, indexOfItem, newValue)</span><br><span class="line">// vm.$set，Vue.set的一个别名</span><br><span class="line">vm.$set(vm.items, indexOfItem, newValue)</span><br><span class="line">// Array.prototype.splice</span><br><span class="line">vm.items.splice(indexOfItem, 1, newValue)</span><br></pre></td></tr></table></figure>
+
+<p>为了解决第二个问题，Vue 提供了以下操作方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Array.prototype.splice</span><br><span class="line">vm.items.splice(newLength)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="9-谈谈对生命周期的理解"><a href="#9-谈谈对生命周期的理解" class="headerlink" title="9.谈谈对生命周期的理解"></a>9.谈谈对生命周期的理解</h3><blockquote>
+<p>Vue 实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模版、挂载 Dom -&gt; 渲染、更新 -&gt; 渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。</p>
+</blockquote>
+<p><strong><em>各个生命周期的作用</em></strong><br>|生命周期 |描述|<br>|—————–|——————-|<br>| beforeCreate |组件实例被创建之初，组件的属性生效之前|<br>| created |组件实例已经完全创建，属性也绑定，但真实 dom 还没有生成，$el 还不可用|<br>| beforeMount     |在挂载开始之前被调用：相关的 render 函数首次被调用|<br>| mounted         |el被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子|<br>| beforeUpdate |组件数据更新之前调用，发生在虚拟 DOM 打补丁之前|<br>| updated |组件数据更新之后|<br>| activited |keep-alive 专属，组件被激活时调用|<br>| deadctivated |keep-alive 专属，组件被销毁时调用|<br>| beforeDestory |组件销毁前调用|<br>| destoryed |组件销毁后调用|</p>
+<h3 id="10-Vue-的父组件和子组件生命周期钩子函数执行顺序"><a href="#10-Vue-的父组件和子组件生命周期钩子函数执行顺序" class="headerlink" title="10.Vue 的父组件和子组件生命周期钩子函数执行顺序"></a>10.Vue 的父组件和子组件生命周期钩子函数执行顺序</h3><blockquote>
+<p>Vue 的父组件和子组件生命周期钩子函数执行顺序可以归类为以下 4 部分：</p>
+<p>加载渲染过程 :<br>· 父 beforeCreate -&gt; 父 created -&gt; 父 beforeMount -&gt; 子 beforeCreate -&gt; 子 created -&gt; 子 beforeMount -&gt; 子 mounted -&gt; 父 mounted<br>子组件更新过程 :<br>· 父 beforeUpdate -&gt; 子 beforeUpdate -&gt; 子 updated -&gt; 父 updated<br>父组件更新过程 :<br>· 父 beforeUpdate -&gt; 父 updated<br>销毁过程 :<br>· 父 beforeDestroy -&gt; 子 beforeDestroy -&gt; 子 destroyed -&gt; 父 destroyed</p>
+</blockquote>
+<h3 id="11-父组件可以监听到子组件的生命周期吗"><a href="#11-父组件可以监听到子组件的生命周期吗" class="headerlink" title="11.父组件可以监听到子组件的生命周期吗"></a>11.父组件可以监听到子组件的生命周期吗</h3><blockquote>
+<p>比如有父组件 Parent 和子组件 Child，如果父组件监听到子组件挂载 mounted 就做一些逻辑处理，可以通过以下写法实现：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Parent.vue</span><br><span class="line">&lt;Child @mounted=&quot;doSomething&quot;/&gt;</span><br><span class="line"></span><br><span class="line">// Child.vue</span><br><span class="line">mounted() &#123;</span><br><span class="line">    this.$emit(&quot;mounted&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上需要手动通过 $emit 触发父组件的事件，更简单的方式可以在父组件引用子组件时通过 @hook 来监听即可，如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//  Parent.vue</span><br><span class="line">&lt;Child @hook:mounted=&quot;doSomething&quot; &gt;&lt;/Child&gt;</span><br><span class="line"></span><br><span class="line">doSomething() &#123;</span><br><span class="line">   console.log(&#x27;父组件监听到 mounted 钩子函数 ...&#x27;);</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line">//  Child.vue</span><br><span class="line">mounted()&#123;</span><br><span class="line">   console.log(&#x27;子组件触发 mounted 钩子函数 ...&#x27;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>// 以上输出顺序为：<br>// 子组件触发 mounted 钩子函数<br>// 父组件监听到 mounted 钩子函数<br>当然 @hook 方法不仅仅是可以监听 mounted，其它的生命周期事件，例如：created，updated 等都可以监听。</p>
+</blockquote>
+<p>33.Vue 框架怎么实现对象和数组的监听</p>
+<p>34.Vue 是如何实现数据双向绑定的</p>
+<p>35.Vue 怎么用 vm.$set()解决对象新增属性不能响应的问题</p>
+<p>36.虚拟 DOM 的优缺点？</p>
+<blockquote>
+<p>优点：</p>
+<ul>
+<li>保证性能下限： 框架的虚拟 DOM 需要适配任何上层 API 可能产生的操作，它的一些 DOM 操作的实现必须是普适的，所以它的性能并不是最优的；但是比起粗暴的 DOM 操作性能要好很多，因此框架的虚拟 DOM 至少可以保证在你不需要手动优化的情况下，依然可以提供还不错的性能，即保证性能的下限；</li>
+<li>无需手动操作 DOM： 我们不再需要手动去操作 DOM，只需要写好 View-Model 的代码逻辑，框架会根据虚拟 DOM 和 数据双向绑定，帮我们以可预期的方式更新视图，极大提高我们的开发效率；</li>
+<li>跨平台： 虚拟 DOM 本质上是 JavaScript 对象,而 DOM 与平台强相关，相比之下虚拟 DOM 可以进行更方便地跨平台操作，例如服务器渲染、weex 开发等等。</li>
+</ul>
+<p>缺点:</p>
+<ul>
+<li>无法进行极致优化： 虽然虚拟 DOM + 合理的优化，足以应对绝大部分应用的性能需求，但在一些性能要求极高的应用中虚拟 DOM 无法进行针对性的极致优化。</li>
+</ul>
+</blockquote>
+<p>37.虚拟 DOM 实现原理？</p>
+<blockquote>
+<p>虚拟 DOM 的实现原理主要包括以下 3 部分：</p>
+<ul>
+<li>用 JavaScript 对象模拟真实 DOM 树，对真实 DOM 进行抽象；</li>
+<li>diff 算法 — 比较两棵虚拟 DOM 树的差异；</li>
+<li>pach 算法 — 将两个虚拟 DOM 对象的差异应用到真正的 DOM 树。</li>
+</ul>
+</blockquote>
+<p>38.Vue 中的 key 有什么作用?</p>
+<blockquote>
+<p><strong><em>key 是为 Vue 中 vnode 的唯一标记，通过这个 key，我们的 diff 操作可以更准确、更快速。</em></strong><br>Vue 的 diff 过程可以概括为：oldCh 和 newCh 各有两个头尾的变量 oldStartIndex、oldEndIndex 和 newStartIndex、newEndIndex，它们会新节点和旧节点会进行两两对比，即一共有 4 种比较方式：newStartIndex 和 oldStartIndex 、newEndIndex 和 oldEndIndex 、newStartIndex 和 oldEndIndex 、newEndIndex 和 oldStartIndex，如果以上 4 种比较都没匹配，如果设置了 key，就会用 key 再进行比较，在比较的过程中，遍历会往中间靠，一旦 StartIdx &gt; EndIdx 表明 oldCh 和 newCh 至少有一个已经遍历完了，就会结束比较。<br>所以 Vue 中 key 的作用是：key 是为 Vue 中 vnode 的唯一标记，通过这个 key，我们的 diff 操作可以更准确、更快速!</p>
+<ul>
+<li>更准确：因为带 key 就不是就地复用了，在 sameNode 函数 a.key === b.key 对比中可以避免就地复用的情况。所以会更加准确。</li>
+<li>更快速：利用 key 的唯一性生成 map 对象来获取对应节点，比遍历方式更快，源码如下：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function createKeyToOldIdx (children, beginIdx, endIdx) &#123;</span><br><span class="line">let i, key</span><br><span class="line">const map = &#123;&#125;</span><br><span class="line">for (i = beginIdx; i &lt;= endIdx; ++i) &#123;</span><br><span class="line">  key = children[i].key</span><br><span class="line">  if (isDef(key)) map[key] = i</span><br><span class="line">&#125;</span><br><span class="line">return map</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>39.你有对 Vue 项目进行那些优化</p>
+<blockquote>
+<p>(1) 代码层面的优化</p>
+<ul>
+<li>v-if 和 v-show 区分使用场景</li>
+<li>computed 和 watch 区分使用场景</li>
+<li>v-for 遍历必须为 item 添加 key，且避免同时使用 v-if</li>
+<li>长列表性能优化</li>
+<li>事件的销毁</li>
+<li>图片资源懒加载</li>
+<li>路由懒加载</li>
+<li>第三方插件的按需引入</li>
+<li>优化无限列表性能</li>
+<li>服务端渲染 SSR or 预渲染</li>
+</ul>
+<hr>
+<p>(2) Webpack 层面的优化</p>
+<ul>
+<li>Webpack 对图片进行压缩</li>
+<li>减少 ES6 转为 ES5 的冗余代码</li>
+<li>提取公共代码</li>
+<li>模板预编译</li>
+<li>提取组件的 CSS</li>
+<li>优化 SourceMap</li>
+<li>构建结果输出分析</li>
+<li>Vue 项目的编译优化</li>
+</ul>
+<hr>
+<p>(3) 基础的 Web 技术的优化</p>
+<ul>
+<li>开启 gzip 压缩</li>
+<li>浏览器缓存</li>
+<li>CDN 的使用</li>
+<li>使用 Chrome Performance 查找性能瓶颈</li>
+</ul>
+</blockquote>
+<p>40.对于 vue3.0 特性有什么了解的吗</p>
+<blockquote>
+<p><strong>Vue 3.0 的目标是让 Vue 核心变得更小、更快、更强大，因此 Vue 3.0 增加以下这些新特性：</strong></p>
+<p><strong>（1）监测机制的改变</strong><br>3.0 将带来基于代理 Proxy 的 observer 实现，提供全语言覆盖的反应性跟踪。这消除了 Vue 2 当中基于 Object.defineProperty 的实现所存在的很多限制：</p>
+<ul>
+<li>只能监测属性，不能监测对象</li>
+<li>检测属性的添加和删除；</li>
+<li>检测数组索引和长度的变更；</li>
+<li>支持 Map、Set、WeakMap 和 WeakSet。<br>新的 observer 还提供了以下特性：</li>
+<li>用于创建 observable 的公开 API。这为中小规模场景提供了简单轻量级的跨组件状态管理解决方案。</li>
+<li>默认采用惰性观察。在 2.x 中，不管反应式数据有多大，都会在启动时被观察到。如果你的数据集很大，这可能会在应用启动时带来明显的开销。在 3.x 中，只观察用于渲染应用程序最初可见部分的数据。</li>
+<li>更精确的变更通知。在 2.x 中，通过 Vue.set 强制添加新属性将导致依赖于该对象的 watcher 收到变更通知。在 3.x 中，只有依赖于特定属性的 watcher 才会收到通知。</li>
+<li>不可变的 observable：我们可以创建值的“不可变”版本（即使是嵌套属性），除非系统在内部暂时将其“解禁”。这个机制可用于冻结 prop 传递或 Vuex 状态树以外的变化。</li>
+<li>更好的调试功能：我们可以使用新的 renderTracked 和 renderTriggered 钩子精确地跟踪组件在什么时候以及为什么重新渲染。</li>
+</ul>
+<p><strong>（2）模板</strong><br>模板方面没有大的变更，只改了作用域插槽，2.x 的机制导致作用域插槽变了，父组件会重新渲染，而 3.0 把作用域插槽改成了函数的方式，这样只会影响子组件的重新渲染，提升了渲染的性能。<br>同时，对于 render 函数的方面，vue3.0 也会进行一系列更改来方便习惯直接使用 api 来生成 vdom 。</p>
+<p><strong>（3）对象式的组件声明方式</strong><br>vue2.x 中的组件是通过声明的方式传入一系列 option，和 TypeScript 的结合需要通过一些装饰器的方式来做，虽然能实现功能，但是比较麻烦。<br>3.0 修改了组件的声明方式，改成了类式的写法，这样使得和 TypeScript 的结合变得很容易。<br>此外，vue 的源码也改用了 TypeScript 来写。其实当代码的功能复杂之后，必须有一个静态类型系统来做一些辅助管理。<br>现在 vue3.0 也全面改用 TypeScript 来重写了，更是使得对外暴露的 api 更容易结合 TypeScript。静态类型系统对于复杂代码的维护确实很有必要。</p>
+<p><strong>（4）其它方面的更改</strong><br>vue3.0 的改变是全面的，上面只涉及到主要的 3 个方面，还有一些其他的更改：</p>
+<ul>
+<li>支持自定义渲染器，从而使得 weex 可以通过自定义渲染器的方式来扩展，而不是直接 fork 源码来改的方式。</li>
+<li>支持 Fragment（多个根节点）和 Protal（在 dom 其他部分渲染组建内容）组件，针对一些特殊的场景做了处理。</li>
+<li>基于 treeshaking 优化，提供了更多的内置功能。</li>
+</ul>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:null">Biile</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://biile.xyz/2022/05/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/">https://biile.xyz/2022/05/10/前端面试题集/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://biile.xyz" target="_blank">Biile</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/03/07/export-%E5%92%8Cexport-default%E7%9A%84%E5%8C%BA%E5%88%AB/"><img class="next-cover" src="/img/cover30.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">export 和export default的区别</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86"><span class="toc-text">前端面试题集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-%E7%AF%87"><span class="toc-text">HTML 篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8B%E5%AF%B9-HTML-%E8%AF%AD%E4%B9%89%E5%8C%96%E7%9A%84%E8%A7%A3%E9%87%8A"><span class="toc-text">1.简述一下对 HTML 语义化的解释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%A0%87%E7%AD%BE%E4%B8%8A-title-%E5%92%8C-alt-%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">2.标签上 title 和 alt 属性的区别是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-iframe-%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-text">3.iframe 的优缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E7%AF%87"><span class="toc-text">CSS 篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B-CSS-%E7%9A%84%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="toc-text">1.介绍一下 CSS 的盒子模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-text">2.垂直居中的几种方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-rgba-%E5%92%8C-opacity-%E7%9A%84%E9%80%8F%E6%98%8E%E6%95%88%E6%9E%9C%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F"><span class="toc-text">3.rgba 和 opacity 的透明效果有什么不同？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-position-%E7%9A%84%E5%80%BC%EF%BC%8Crelative-%E5%92%8C-absolute-%E5%88%86%E5%88%AB%E6%98%AF%E7%9B%B8%E5%AF%B9%E4%BA%8E%E8%B0%81%E8%BF%9B%E8%A1%8C%E5%AE%9A%E4%BD%8D"><span class="toc-text">4.position 的值，relative 和 absolute 分别是相对于谁进行定位</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-CSS-%E6%B7%B7%E5%90%88%E7%AF%87"><span class="toc-text">HTML &#x2F; CSS 混合篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-HTML5%E3%80%81CSS-%E9%87%8C%E9%9D%A2%E9%83%BD%E6%96%B0%E5%A2%9E%E4%BA%86%E9%82%A3%E4%BA%9B%E7%89%B9%E6%80%A7%EF%BC%9F"><span class="toc-text">1.HTML5、CSS 里面都新增了那些特性？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-BFC-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">2.BFC 是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%B8%B8%E8%A7%81%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98"><span class="toc-text">3.常见兼容性问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-%E7%AF%87"><span class="toc-text">JS 篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-JS-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%9F"><span class="toc-text">1.JS 数据类型？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%80%BC%E6%98%AF%E4%BB%80%E4%B9%88%E7%B1%BB%E5%9E%8B%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-text">2.判断一个值是什么类型有哪些方法？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-null-%E5%92%8C-undefined-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">3.null 和 undefined 的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%80%8E%E4%B9%88%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F-arr-%E7%9A%84%E8%AF%9D%E6%98%AF%E5%90%A6%E4%B8%BA%E6%95%B0%E7%BB%84%EF%BC%88%E6%AD%A4%E9%A2%98%E7%94%A8-typeof-%E4%B8%8D%E8%A1%8C%EF%BC%89%EF%BC%9F"><span class="toc-text">4.怎么判断一个变量 arr 的话是否为数组（此题用 typeof 不行）？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E6%9C%89%E5%93%AA%E4%BA%9B%E7%89%B9%E7%82%B9%EF%BC%9F"><span class="toc-text">5.箭头函数有哪些特点？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-new-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%9F"><span class="toc-text">6.new 操作符具体干了什么呢？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-documen-write"><span class="toc-text">7.documen.write</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-ajax-%E8%BF%87%E7%A8%8B"><span class="toc-text">8.ajax 过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E8%AF%B7%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%8B-JavaScript-%E7%9A%84%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%EF%BC%9F"><span class="toc-text">9.请解释一下 JavaScript 的同源策略？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E9%97%AD%E5%8C%85%E5%92%8C%E9%97%AD%E5%8C%85%E5%B8%B8%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">10.介绍一下闭包和闭包常用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-JavaScript-%E7%9A%84%E5%86%85%E5%AD%98%EF%BC%88%E5%9E%83%E5%9C%BE%EF%BC%89%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%EF%BC%9F"><span class="toc-text">11.JavaScript 的内存（垃圾）回收机制？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-%E7%AF%87"><span class="toc-text">Vue 篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%B0%88%E8%B0%88%E5%AF%B9-MVVM-%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">1.谈谈对 MVVM 开发模式的理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-v-if-%E5%92%8C-v-show-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">2.v-if 和 v-show 有什么区别？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8%E8%BF%87-VueX-%E5%90%97%EF%BC%9F"><span class="toc-text">3.使用过 VueX 吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%AF%B4%E8%AF%B4%E5%AF%B9-SPA-%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%AE%83%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E5%88%86%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">4.说说对 SPA 单页面的理解，它的优缺点分别是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Class-%E4%BA%8E-Style-%E5%A6%82%E4%BD%95%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9A%EF%BC%9F"><span class="toc-text">5.Class 于 Style 如何动态绑定？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%80%8E%E6%A0%B7%E7%90%86%E8%A7%A3-Vue-%E7%9A%84%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81%EF%BC%9F"><span class="toc-text">6.怎样理解 Vue 的单向数据流？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-computed-%E5%92%8C-watch-%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%BF%90%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F"><span class="toc-text">7.computed 和 watch 的区别和运用场景？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E7%9B%B4%E6%8E%A5%E7%BB%99%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC%EF%BC%8CVue-%E8%83%BD%E6%A3%80%E6%B5%8B%E5%88%B0%E5%8F%98%E5%8C%96%E5%90%97%EF%BC%9F"><span class="toc-text">8.直接给一个数组赋值，Vue 能检测到变化吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E8%B0%88%E8%B0%88%E5%AF%B9%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">9.谈谈对生命周期的理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-Vue-%E7%9A%84%E7%88%B6%E7%BB%84%E4%BB%B6%E5%92%8C%E5%AD%90%E7%BB%84%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-text">10.Vue 的父组件和子组件生命周期钩子函数执行顺序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E7%88%B6%E7%BB%84%E4%BB%B6%E5%8F%AF%E4%BB%A5%E7%9B%91%E5%90%AC%E5%88%B0%E5%AD%90%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%90%97"><span class="toc-text">11.父组件可以监听到子组件的生命周期吗</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('/img/footer.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Biile</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">May there be enough clouds in your life to make a beauBtifulsunset.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
