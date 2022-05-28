@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Python创建、退出虚拟环境(virtualenv)</title>
+      <link href="/2022/05/28/Python%E5%88%9B%E5%BB%BA%E3%80%81%E9%80%80%E5%87%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-virtualenv/"/>
+      <url>/2022/05/28/Python%E5%88%9B%E5%BB%BA%E3%80%81%E9%80%80%E5%87%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-virtualenv/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Python虚拟环境-–-virtualenv"><a href="#Python虚拟环境-–-virtualenv" class="headerlink" title="Python虚拟环境 – virtualenv"></a>Python虚拟环境 – virtualenv</h2><p>virtualenv 是一个创建隔绝的Python 环境的工具。virtualenv 创建一个包含所有必要的可执行文件的文件夹，用来使用Python 工程所需的包。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install virtualenv</span><br></pre></td></tr></table></figure><h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>1.为一个工程创建一个虚拟环境：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir my_project_dir　　#创建文件夹</span><br><span class="line">$ cd my_project_dir</span><br><span class="line">$ virtualenv venv　　#venv为虚拟环境目录名，目录名自定义</span><br></pre></td></tr></table></figure><p><code>　virtualenv venv</code> 将会在当前的目录中创建一个文件夹，包含了Python可执行文件，以及 <code>pip</code> 库的一份拷贝，这样就能安装其他包了。虚拟环境的名字（此例中是 <code>venv</code> ）可以是任意的；若省略名字将会把文件均放在当前目录。</p><p>在任何你运行命令的目录中，这会创建Python的拷贝，并将之放在叫做 <code>venv</code> 的文件中。</p><p>你可以选择使用一个Python解释器：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ virtualenv -p /usr/<span class="built_in">bin</span>/python2<span class="number">.7</span> venv　　　　<span class="comment"># -p参数指定Python解释器程序路径</span></span><br></pre></td></tr></table></figure><p>2.要使用虚拟环境要将其激活：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ source venv/<span class="built_in">bin</span>/activate　　</span><br></pre></td></tr></table></figure><p>在此使用的pip安装包将会放在 <code>venv</code> 文件夹中，与全局安装的Python隔绝开。</p><p>3.如果在虚拟环境中暂时完成了工作，则可以停用它：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ . venv/<span class="built_in">bin</span>/deactivate</span><br></pre></td></tr></table></figure><p>这将会回到系统默认的Python解释器，包括已安装的库也会回到默认的。</p><p>要删除一个虚拟环境，只需删除它的文件夹。（执行 <code>rm -rf venv</code> ）。</p><p>这里virtualenv 有些不便，因为virtual的启动、停止脚本都在特定文件夹，可能一段时间后，你可能会有很多个虚拟环境散落在系统各处，你可能忘记它们的名字或者位置。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务端 </category>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 虚拟环境 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端面试题集</title>
       <link href="/2022/05/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/"/>
       <url>/2022/05/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86/</url>
