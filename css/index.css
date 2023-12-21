@@ -1318,8 +1318,8 @@ canvas:not(#ribbon-canvas),
   --tab-botton-bg: #f0f0f0;
   --tab-botton-color: #1f2d3d;
   --tab-button-hover-bg: #dcdcdc;
-  --tab-button-active-bg: rgba(50,73,54,0.176);
-  --card-bg: rgba(50,73,54,0.176);
+  --tab-button-active-bg: rgba(50,73,54,0.1);
+  --card-bg: rgba(50,73,54,0.1);
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #e58a8a;
   --btn-color: #fff;
